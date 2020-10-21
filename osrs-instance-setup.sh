@@ -48,8 +48,6 @@ chmod +x osbot.jar                       # Da permissoes de execucao ao ficheiro
 
 echo "[osrs-instance] > Creating sub instances..."
 
-cp osbot.jar ~/Desktop/osbot.jar				 										 # Copia o osbot para o desktop do xfce
-cd ~/Desktop									 										 # Entra dentro do desktop
 echo 'sudo java -jar osbot.jar' > startbot_default.sh	 								 # Cria um fichiro executavel para iniciar o bot
 echo 'sudo java -jar osbot.jar -login mendigo:osbotpwd098123#' > startbot_mendigo.sh	 # Cria um fichiro executavel para iniciar o bot
 chmod +x startbot_default.sh															 # Da permissoes de execucao ao ficheiro
