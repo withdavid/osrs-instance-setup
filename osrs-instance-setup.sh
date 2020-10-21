@@ -41,18 +41,19 @@ java -version
 #                 DOWNLOAD DO OSRS E DO BOT                       #
 ###################################################################
 
-echo "[osrs-instance] > Downloading OSBOT client..."
+echo "[osrs-instance] > Downloading client..."
 sudo wget https://osbot.org/mvc/get
 mv get osbot.jar                         # Muda o nome do ficheiro
 chmod +x osbot.jar                       # Da permissoes de execucao ao ficheiro
 
-echo "[osrs-instance] > Executing OSBOT."
+echo "[osrs-instance] > Creating sub instances..."
 
 cp osbot.jar ~/Desktop/osbot.jar				 										 # Copia o osbot para o desktop do xfce
 cd ~/Desktop									 										 # Entra dentro do desktop
 echo 'sudo java -jar osbot.jar' > startbot_default.sh	 								 # Cria um fichiro executavel para iniciar o bot
 echo 'sudo java -jar osbot.jar -login mendigo:osbotpwd098123#' > startbot_mendigo.sh	 # Cria um fichiro executavel para iniciar o bot
-
+chmod +x startbot_default.sh															 # Da permissoes de execucao ao ficheiro
+chmod +x startbot_mendigo.sh															 # Da permissoes de execucao ao ficheiro
 
 # Dá print de algumas informações
 printf "\nCria um utilizador padrao.\n
